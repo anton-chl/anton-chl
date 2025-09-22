@@ -28,3 +28,4 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/anton-chl/anton-chl/output/github-contribution-grid-snake.svg" alt="snake animation"/>
 </p>
+
