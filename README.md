@@ -11,10 +11,11 @@
 ---
 
 ## About Me
-- 2A Computer Engineering Student at the University of Waterloo
-- Hackathon enthusiast (8x Winner)
-- Co-founder of **Flair Studio** — AI-powered shopping + social discovery
-- Interests: AI/ML, LLMs, CV, Graphics processing, optimization
+I'm a 2A Computer Engineering Student at the University of Waterloo, who happens to be a Hackathon enthusiast (8x Winner).
+Right now, i'm mostly interested in: AI/ML, LLMs, CV, Graphics processing, optimization.
+I'm very passionate about computer science and math, design, and robotics.
+
+When I'm not coding or studying, I like to do origami and drawing (<a href="https://imgur.com/a/art-by-anton-b6C0ZCR">Gallery).
 
 ---
 
