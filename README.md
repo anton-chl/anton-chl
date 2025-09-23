@@ -24,6 +24,5 @@
   <img height="165" src="https://github-readme-streak-stats.herokuapp.com?user=anton-chl&theme=tokyonight&hide_border=true"/>
 </p>
 
-
-![snake animation](https://github.com/anton-chl/anton-chl/output/github-contributions-snake.svg)
+![snake animation](https://github.com/anton-chl/anton-chl/blob/output/github-contributions-snake.svg)
 
