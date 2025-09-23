@@ -6,12 +6,12 @@
 - My personal <a href="https://antonlee.ca">Website
 - My <a href="mailto:ach2lee@uwaterloo.ca">Email
 - My <a href="https://devpost.com/cx">Devpost
-- Building <a href="https://flair.social">Flair
+- Currently building <a href="https://flair.social">Flair
 
 ---
 
 ## About Me
-- Second Year Computer Engineering @ **University of Waterloo**
+- 2A Computer Engineering Student at the University of Waterloo
 - Hackathon enthusiast (8x Winner)
 - Co-founder of **Flair Studio** — AI-powered shopping + social discovery
 - Interests: AI/ML, LLMs, CV, Graphics processing, optimization
