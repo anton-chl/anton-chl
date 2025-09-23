@@ -10,7 +10,7 @@
 
 ---
 
-## 👋 About
+## About Me
 - Second Year Computer Engineering @ **University of Waterloo**
 - Hackathon enthusiast (8x Winner)
 - Co-founder of **Flair Studio** — AI-powered shopping + social discovery
@@ -18,7 +18,6 @@
 
 ---
 
-## 📊 Stats & Activity
 <p align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=anton-chl&show_icons=true&theme=tokyonight&hide_border=true"/>
   <img height="165" src="https://github-readme-streak-stats.herokuapp.com?user=anton-chl&theme=tokyonight&hide_border=true"/>
