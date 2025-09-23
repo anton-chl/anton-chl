@@ -1,6 +1,6 @@
 <!-- Hero -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&size=28&pause=1200&color=36C5F0&center=true&vCenter=true&width=900&lines=Hey%2C+I'm+Anton+Lee+%F0%9F%91%8B;Computer+Engineering+%40+University+of+Waterloo" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Nasalization&weight=100&size=36&pause=1000&color=2C89F7&width=435&lines=Hey%2C+I'm+Anton+Lee!;Computer+Engineering+%40+UWaterloo" />
 </p>
 
 - My personal <a href="https://antonlee.ca">Website
