@@ -1,6 +1,6 @@
 <!-- Hero -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Nasalization&weight=100&size=36&pause=1000&color=2C89F7&width=435&lines=Hey%2C+I'm+Anton+Lee!;Computer+Engineering+%40+UWaterloo" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Nasalization&weight=100&size=36&pause=1000&color=2C89F7&width=435&lines=Hey%2C+I'm+Anton+Lee!;Comp+Eng+%40+UWaterloo" />
 </p>
 
 - My personal <a href="https://antonlee.ca">Website
@@ -24,6 +24,4 @@ When I'm not coding or studying, I like to do origami and drawing (<a href="http
   <img height="165" src="https://github-readme-streak-stats.herokuapp.com?user=anton-chl&theme=tokyonight&hide_border=true"/>
 </p>
 
-<!--commenting it out for now cause 0 contributions lol
 ![snake animation](https://github.com/anton-chl/anton-chl/blob/output/github-contributions-snake.svg)
--->
