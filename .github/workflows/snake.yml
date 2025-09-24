@@ -23,6 +23,7 @@ jobs:
           github_user_name: anton-chl
           outputs: |
             dist/github-contributions-snake.svg
+            dist/github-contributions-snake.gif
 
       - name: Customize snake colors
         run: |
