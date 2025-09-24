@@ -26,14 +26,17 @@ jobs:
 
       - name: Customize snake colors
         run: |
-          tmpfile=$(mktemp)
+          sudo cp dist/github-contributions-snake.svg /tmp/snake.svg
 
-          if ! grep -q "snakeGradient" dist/github-contributions-snake.svg; then
-            sed 's|<svg|<svg><defs><linearGradient id="snakeGradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1"/><stop offset="100%" style="stop-color:#8a2be2;stop-opacity:1"/></linearGradient></defs>|' dist/github-contributions-snake.svg > "$tmpfile"
-            mv "$tmpfile" dist/github-contributions-snake.svg
+          # Inject gradient only if not present
+          if ! grep -q "snakeGradient" /tmp/snake.svg; then
+            sed -i 's|<svg|<svg><defs><linearGradient id="snakeGradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1"/><stop offset="100%" style="stop-color:#8a2be2;stop-opacity:1"/></linearGradient></defs>|' /tmp/snake.svg
           fi
 
-          sed -i 's/fill="currentColor"/fill="url(#snakeGradient)"/g' dist/github-contributions-snake.svg
+          # Apply gradient fill
+          sed -i 's/fill="currentColor"/fill="url(#snakeGradient)"/g' /tmp/snake.svg
+
+          sudo mv /tmp/snake.svg dist/github-contributions-snake.svg
 
       - name: Commit SVG to repo
         run: |
