@@ -26,8 +26,6 @@ When I'm not coding or studying, I like to do origami and drawing, which you can
   <img height="165" src="https://github-readme-streak-stats.herokuapp.com?user=anton-chl&theme=tokyonight&hide_border=true"/>
 </p>
 
-![snake animation](https://anton-chl.github.io/anton-chl/snake-custom.svg)
-
-![snake animation](https://raw.githubusercontent.com/anton-chl/anton-chl/output/github-contributions-snake.gif)
-[View the SVG version](https://anton-chl.github.io/anton-chl/snake-contributions-snake.svg)
+![snake animation](https://raw.githubusercontent.com/anton-chl/anton-chl/main/custom-dist/snake.gif)
+[View the SVG version](https://anton-chl.github.io/anton-chl/snake-custom.svg)
 
