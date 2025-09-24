@@ -8,14 +8,20 @@ TOKEN = os.environ.get("GITHUB_TOKEN")
 GRID_CELL = 20
 SNAKE_LENGTH = 15
 SVG_NAME = "snake.svg"
-FRAMES = 500  # number of steps in animation
-FRAME_MS = 120  # duration per frame
+FRAMES = 500   # number of animation steps
+FRAME_MS = 120 # duration per frame in milliseconds
 
 # Colors
-BG_COLOR = "#161b22"
-GRID_COLOR = "#21262d"
-LEVEL_COLORS = ["#0e4429", "#006d32", "#26a641", "#39d353"]
+BG_COLOR = "#161b22"   # GitHub dark blue background
+GRID_COLOR = "#21262d" # subtle grid outline
+LEVEL_COLORS = [
+    "#0e4429",  # darkest green
+    "#006d32",
+    "#26a641",
+    "#39d353",  # lightest green
+]
 
+# === STEP 1: Fetch contributions grid ===
 def fetch_contributions(username):
     url = "https://api.github.com/graphql"
     query = """
@@ -46,6 +52,7 @@ def fetch_contributions(username):
         for row, day in enumerate(week["contributionDays"]):
             count = day["contributionCount"]
             if count > 0:
+                # Scale contribution count into GitHub green levels
                 if count >= 20:
                     level = 0
                 elif count >= 10:
@@ -57,6 +64,7 @@ def fetch_contributions(username):
                 food[(col, row)] = LEVEL_COLORS[level]
     return food, width
 
+# === STEP 2: Random snake movement (avoids self + walls) ===
 def simulate_snake(food_positions, width, height=7):
     snake = [(0, 0)]
     eaten = set()
@@ -70,9 +78,9 @@ def simulate_snake(food_positions, width, height=7):
             nx, ny = head[0] + dx, head[1] + dy
             if 0 <= nx < width and 0 <= ny < height:
                 if len(snake) > 1 and (nx, ny) == snake[-2]:
-                    continue
+                    continue  # no reversal
                 if (nx, ny) in snake:
-                    continue
+                    continue  # no self collision
                 valid_moves.append((dx, dy))
         if not valid_moves:
             break
@@ -86,30 +94,30 @@ def simulate_snake(food_positions, width, height=7):
         positions.append((list(snake), set(eaten)))
     return positions
 
+# === STEP 3: Generate SVG ===
 def generate_svg(positions, food, width, height=7):
     svg_width = width * GRID_CELL
     svg_height = height * GRID_CELL
+    dur = FRAMES * FRAME_MS / 1000  # total duration in seconds
 
     svg = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{svg_width}" height="{svg_height}" viewBox="0 0 {svg_width} {svg_height}">']
     svg.append(f'<rect width="100%" height="100%" fill="{BG_COLOR}"/>')
 
-    # draw grid outlines
+    # grid cells
     for x in range(width):
         for y in range(height):
             x0, y0 = x * GRID_CELL + 2, y * GRID_CELL + 2
             size = GRID_CELL - 4
             svg.append(f'<rect x="{x0}" y="{y0}" width="{size}" height="{size}" rx="4" ry="4" fill="{BG_COLOR}" stroke="{GRID_COLOR}" stroke-width="1"/>')
 
-    # uneaten food base
+    # food cells
     for (fx, fy), color in food.items():
         x0, y0 = fx * GRID_CELL + 2, fy * GRID_CELL + 2
         size = GRID_CELL - 4
         svg.append(f'<rect x="{x0}" y="{y0}" width="{size}" height="{size}" rx="4" ry="4" fill="{color}" class="food-{fx}-{fy}"/>')
 
-    # snake animation frames
-    dur = FRAMES * FRAME_MS / 1000
+    # animation frames
     svg.append(f'<g id="snake">')
-
     for frame, (snake, eaten) in enumerate(positions):
         t_start = frame * FRAME_MS / 1000
         t_end = (frame + 1) * FRAME_MS / 1000
@@ -119,7 +127,7 @@ def generate_svg(positions, food, width, height=7):
         # snake body
         for i, (sx, sy) in enumerate(snake):
             if i == len(snake) - 1:
-                color = "#ff69b4"
+                color = "#ff69b4"  # head pink
             else:
                 ratio = i / len(snake)
                 r = int(255 * (1 - ratio) + 138 * ratio)
@@ -130,15 +138,18 @@ def generate_svg(positions, food, width, height=7):
             size = GRID_CELL - 4
             svg.append(f'<rect x="{x0}" y="{y0}" width="{size}" height="{size}" rx="4" ry="4" fill="{color}"/>')
 
-        # hide eaten food
+        # eaten food disappears
         for (fx, fy) in eaten:
-            svg.append(f'<rect x="{fx*GRID_CELL+2}" y="{fy*GRID_CELL+2}" width="{GRID_CELL-4}" height="{GRID_CELL-4}" rx="4" ry="4" fill="{BG_COLOR}"/>')
+            x0, y0 = fx * GRID_CELL + 2, fy * GRID_CELL + 2
+            size = GRID_CELL - 4
+            svg.append(f'<rect x="{x0}" y="{y0}" width="{size}" height="{size}" rx="4" ry="4" fill="{BG_COLOR}" stroke="{GRID_COLOR}" stroke-width="1"/>')
 
         svg.append(f'<set attributeName="visibility" to="visible" begin="{t_start}s" end="{t_end}s"/>')
         svg.append('</g>')
-
     svg.append('</g>')
-    svg.append(f'<animate xlink:href="#snake" attributeName="visibility" from="visible" to="visible" dur="{dur}s" repeatCount="indefinite"/>')
+
+    # infinite loop
+    svg.append(f'<animate href="#snake" attributeName="visibility" from="visible" to="visible" dur="{dur}s" repeatCount="indefinite"/>')
     svg.append('</svg>')
 
     with open(SVG_NAME, "w") as f:
