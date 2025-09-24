@@ -17,7 +17,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Generate snake animation
+      - name: Generate snake animation (SVG + GIF)
         uses: Platane/snk@v3
         with:
           github_user_name: anton-chl
@@ -25,7 +25,7 @@ jobs:
             dist/github-contributions-snake.svg
             dist/github-contributions-snake.gif
 
-      - name: Customize snake colors
+      - name: Customize snake SVG colors
         run: |
           mkdir -p custom-dist
           cat dist/github-contributions-snake.svg > custom-dist/snake-custom.svg
@@ -40,19 +40,25 @@ jobs:
           sed 's/fill="currentColor"/fill="url(#snakeGradient)"/g' custom-dist/snake-custom.svg > custom-dist/tmp.svg
           mv custom-dist/tmp.svg custom-dist/snake-custom.svg
 
-      - name: Commit SVG to repo
+          # Copy GIF into custom-dist too
+          cp dist/github-contributions-snake.gif custom-dist/snake.gif
+
+      - name: Commit artifacts to repo
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add custom-dist/snake-custom.svg
-          git commit -m "chore: update snake animation" || echo "No changes to commit"
+
+          git add custom-dist/snake-custom.svg custom-dist/snake.gif
+          git commit -m "chore: update snake animation (SVG + GIF)" || echo "No changes to commit"
           git push
 
-      - name: Upload artifact
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
           name: github-contributions-snake
-          path: custom-dist/snake-custom.svg
+          path: |
+            custom-dist/snake-custom.svg
+            custom-dist/snake.gif
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
