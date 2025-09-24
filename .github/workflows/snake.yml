@@ -26,27 +26,24 @@ jobs:
 
       - name: Customize snake colors
         run: |
-          # Read the generated file
-          cat dist/github-contributions-snake.svg > snake.tmp
+          mkdir -p custom-dist
+          cat dist/github-contributions-snake.svg > custom-dist/snake-custom.svg
 
           # Inject gradient only if not already present
-          if ! grep -q "snakeGradient" snake.tmp; then
-            sed 's|<svg|<svg><defs><linearGradient id="snakeGradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1"/><stop offset="100%" style="stop-color:#8a2be2;stop-opacity:1"/></linearGradient></defs>|' snake.tmp > snake2.tmp
-            mv snake2.tmp snake.tmp
+          if ! grep -q "snakeGradient" custom-dist/snake-custom.svg; then
+            sed 's|<svg|<svg><defs><linearGradient id="snakeGradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1"/><stop offset="100%" style="stop-color:#8a2be2;stop-opacity:1"/></linearGradient></defs>|' custom-dist/snake-custom.svg > custom-dist/tmp.svg
+            mv custom-dist/tmp.svg custom-dist/snake-custom.svg
           fi
 
           # Apply gradient fill
-          sed 's/fill="currentColor"/fill="url(#snakeGradient)"/g' snake.tmp > snake2.tmp
-          mv snake2.tmp snake.tmp
-
-          # Save as a new file we own (not overwriting the root-owned one)
-          mv snake.tmp dist/snake-custom.svg
+          sed 's/fill="currentColor"/fill="url(#snakeGradient)"/g' custom-dist/snake-custom.svg > custom-dist/tmp.svg
+          mv custom-dist/tmp.svg custom-dist/snake-custom.svg
 
       - name: Commit SVG to repo
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/snake-custom.svg
+          git add custom-dist/snake-custom.svg
           git commit -m "chore: update snake animation" || echo "No changes to commit"
           git push
 
@@ -54,7 +51,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: github-contributions-snake
-          path: dist/snake-custom.svg
+          path: custom-dist/snake-custom.svg
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -62,7 +59,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: custom-dist
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
