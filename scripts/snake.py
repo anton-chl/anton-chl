@@ -1,6 +1,6 @@
 import os
 import requests
-import datetime
+import random
 from PIL import Image, ImageDraw
 
 # === CONFIG ===
@@ -8,9 +8,15 @@ USERNAME = "anton-chl"
 TOKEN = os.environ.get("GITHUB_TOKEN")  # GitHub token in repo secrets
 GRID_CELL = 20   # size of each cell in pixels
 FPS = 5          # frames per second
+SNAKE_LENGTH = 15
 GIF_NAME = "snake.gif"
 
-# === STEP 1: Fetch contributions from GitHub GraphQL ===
+# Colors
+BG_COLOR = "#0d1117"      # dark GitHub background
+FOOD_COLOR = "#196127"    # GitHub green
+EATEN_COLOR = "#30363d"   # grey-blue after eaten
+
+# === STEP 1: Fetch contributions grid ===
 def fetch_contributions(username):
     url = "https://api.github.com/graphql"
     query = """
@@ -39,65 +45,63 @@ def fetch_contributions(username):
     for col, week in enumerate(weeks):
         for row, day in enumerate(week["contributionDays"]):
             if day["contributionCount"] > 0:
-                grid.append((col, row))  # food coordinates
+                grid.append((col, row))  # food
     return grid, len(weeks)
 
-# === STEP 2: Snake simulation ===
+# === STEP 2: Random-walk snake ===
 def simulate_snake(food_positions, width, height=7):
     snake = [(0, 0)]  # starting head
-    direction = (1, 0)  # move right
     frames = []
     eaten = set()
 
-    max_steps = width * height * 2
-    for step in range(max_steps):
+    directions = [(1,0), (-1,0), (0,1), (0,-1)]
+    steps = width * height * 4
+
+    for _ in range(steps):
         head = snake[-1]
-        new_head = (head[0] + direction[0], head[1] + direction[1])
 
-        # change direction at bounds
-        if new_head[0] >= width:
-            new_head = (head[0], head[1] + 1)
-            direction = (0, 1)
-        if new_head[1] >= height:
-            new_head = (head[0] - 1, head[1])
-            direction = (-1, 0)
-        if new_head[0] < 0:
-            new_head = (head[0], head[1] - 1)
-            direction = (0, -1)
-        if new_head[1] < 0:
-            new_head = (head[0] + 1, head[1])
-            direction = (1, 0)
+        # pick valid random move
+        valid_moves = []
+        for dx, dy in directions:
+            nx, ny = head[0] + dx, head[1] + dy
+            if 0 <= nx < width and 0 <= ny < height:
+                valid_moves.append((nx, ny))
+        if not valid_moves:
+            break
 
+        new_head = random.choice(valid_moves)
         snake.append(new_head)
 
-        # eat food → grow
-        if new_head in food_positions and new_head not in eaten:
+        # trim to fixed length
+        while len(snake) > SNAKE_LENGTH:
+            snake.pop(0)
+
+        # eat food (turns grey)
+        if new_head in food_positions:
             eaten.add(new_head)
-        else:
-            snake.pop(0)  # move without growing
 
         frames.append(render_frame(width, height, snake, food_positions, eaten))
 
     return frames
 
-# === STEP 3: Rendering ===
+# === STEP 3: Render frame ===
 def render_frame(width, height, snake, food, eaten):
-    img = Image.new("RGB", (width * GRID_CELL, height * GRID_CELL), "white")
+    img = Image.new("RGB", (width * GRID_CELL, height * GRID_CELL), BG_COLOR)
     draw = ImageDraw.Draw(img)
 
     # draw food
     for fx, fy in food:
-        color = "#196127" if (fx, fy) not in eaten else "#eeeeee"
+        color = FOOD_COLOR if (fx, fy) not in eaten else EATEN_COLOR
         x0, y0 = fx * GRID_CELL, fy * GRID_CELL
         x1, y1 = x0 + GRID_CELL - 2, y0 + GRID_CELL - 2
         draw.rectangle([x0, y0, x1, y1], fill=color)
 
-    # draw snake body
+    # draw snake
     for i, (sx, sy) in enumerate(snake):
         if i == len(snake) - 1:
             color = "#ff69b4"  # head pink
         else:
-            # gradient from purple to pink
+            # purple→pink gradient
             ratio = i / len(snake)
             r = int(255 * (1 - ratio) + 138 * ratio)
             g = int(105 * (1 - ratio) + 43 * ratio)
