@@ -1,0 +1,54 @@
+name: Generate Real Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install deps
+        run: pip install requests pillow
+
+      - name: Run Snake Game
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p custom-dist
+          python scripts/snake.py
+          mv snake.gif custom-dist/snake.gif
+
+      - name: Commit snake GIF
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add custom-dist/snake.gif
+          git commit -m "update snake game gif" || echo "No changes"
+          git push
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        with:
+          enablement: true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: custom-dist
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
