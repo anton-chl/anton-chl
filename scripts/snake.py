@@ -11,11 +11,18 @@ FPS = 5          # frames per second
 SNAKE_LENGTH = 15
 GIF_NAME = "snake.gif"
 
-# Colors
-BG_COLOR = "#0d1117"      # dark GitHub background
-FOOD_COLOR = "#196127"    # GitHub green
-GRID_COLOR = "#161b22"    # subtle grid outline
-RADIUS = 4                # corner radius for rounded squares
+# Colors (GitHub dark theme)
+BG_COLOR = "#161b22"      # background dark blue
+GRID_COLOR = "#21262d"    # subtle grid outline
+RADIUS = 4                # corner radius
+
+# GitHub green scale (light → dark)
+LEVEL_COLORS = [
+    "#0e4429",  # darkest green
+    "#006d32",
+    "#26a641",
+    "#39d353",  # light green
+]
 
 # === STEP 1: Fetch contributions grid ===
 def fetch_contributions(username):
@@ -42,12 +49,23 @@ def fetch_contributions(username):
     data = resp.json()
     weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
 
-    grid = []
+    food = {}
+    width = len(weeks)
     for col, week in enumerate(weeks):
         for row, day in enumerate(week["contributionDays"]):
-            if day["contributionCount"] > 0:
-                grid.append((col, row))  # food
-    return grid, len(weeks)
+            count = day["contributionCount"]
+            if count > 0:
+                # Scale contributionCount into 4 levels
+                if count >= 20:
+                    level = 0
+                elif count >= 10:
+                    level = 1
+                elif count >= 5:
+                    level = 2
+                else:
+                    level = 3
+                food[(col, row)] = LEVEL_COLORS[level]
+    return food, width
 
 # === STEP 2: Random-walk snake ===
 def simulate_snake(food_positions, width, height=7):
@@ -56,7 +74,7 @@ def simulate_snake(food_positions, width, height=7):
     eaten = set()
 
     directions = [(1,0), (-1,0), (0,1), (0,-1)]
-    steps = width * height * 4
+    steps = width * height * 6
 
     for _ in range(steps):
         head = snake[-1]
@@ -66,9 +84,10 @@ def simulate_snake(food_positions, width, height=7):
         for dx, dy in directions:
             nx, ny = head[0] + dx, head[1] + dy
             if 0 <= nx < width and 0 <= ny < height:
-                # block direct reversal
                 if len(snake) > 1 and (nx, ny) == snake[-2]:
-                    continue
+                    continue  # block reversal
+                if (nx, ny) in snake:
+                    continue  # block collisions
                 valid_moves.append((dx, dy))
 
         if not valid_moves:
@@ -78,11 +97,9 @@ def simulate_snake(food_positions, width, height=7):
         new_head = (head[0] + move[0], head[1] + move[1])
         snake.append(new_head)
 
-        # trim to fixed length
         while len(snake) > SNAKE_LENGTH:
             snake.pop(0)
 
-        # eat food
         if new_head in food_positions:
             eaten.add(new_head)
 
@@ -101,17 +118,17 @@ def render_frame(width, height, snake, food, eaten):
     img = Image.new("RGB", (width * GRID_CELL, height * GRID_CELL), BG_COLOR)
     draw = ImageDraw.Draw(img)
 
-    # draw background grid (empty cells)
+    # background grid
     for x in range(width):
         for y in range(height):
             draw_cell(draw, x, y, BG_COLOR)
 
-    # draw uneaten food
-    for fx, fy in food:
+    # uneaten food
+    for (fx, fy), color in food.items():
         if (fx, fy) not in eaten:
-            draw_cell(draw, fx, fy, FOOD_COLOR)
+            draw_cell(draw, fx, fy, color)
 
-    # draw snake
+    # snake
     for i, (sx, sy) in enumerate(snake):
         if i == len(snake) - 1:
             color = "#ff69b4"  # head pink
