@@ -6,7 +6,9 @@ on:
   workflow_dispatch:       # allow manual runs
 
 permissions:
-  contents: write   # allow workflow to push to the repo
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -24,14 +26,19 @@ jobs:
 
       - name: Customize snake colors
         run: |
-          sed -i 's|<svg|<svg><defs><linearGradient id="snakeGradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1"/><stop offset="100%" style="stop-color:#8a2be2;stop-opacity:1"/></linearGradient></defs>|' dist/github-contributions-snake.svg
+          tmpfile=$(mktemp)
+
+          if ! grep -q "snakeGradient" dist/github-contributions-snake.svg; then
+            sed 's|<svg|<svg><defs><linearGradient id="snakeGradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1"/><stop offset="100%" style="stop-color:#8a2be2;stop-opacity:1"/></linearGradient></defs>|' dist/github-contributions-snake.svg > "$tmpfile"
+            mv "$tmpfile" dist/github-contributions-snake.svg
+          fi
+
           sed -i 's/fill="currentColor"/fill="url(#snakeGradient)"/g' dist/github-contributions-snake.svg
 
-      - name: Commit and push SVG
+      - name: Commit SVG to repo
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add dist/github-contributions-snake.svg
           git commit -m "chore: update snake animation" || echo "No changes to commit"
           git push
@@ -41,3 +48,14 @@ jobs:
         with:
           name: github-contributions-snake
           path: dist/github-contributions-snake.svg
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
