@@ -15,7 +15,7 @@ I'm a 2A Computer Engineering Student at the University of Waterloo, who happens
 Right now, i'm mostly interested in: AI/ML, LLMs, CV, Graphics processing, optimization.
 I'm very passionate about computer science and math, design, and robotics.
 
-When I'm not coding or studying, I like to do origami and drawing (<a href="https://imgur.com/a/art-by-anton-b6C0ZCR">Gallery ).
+When I'm not coding or studying, I like to do origami and drawing, which you can view <a href="https://imgur.com/a/art-by-anton-b6C0ZCR"> here
 
 ---
 
