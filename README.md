@@ -28,5 +28,6 @@ When I'm not coding or studying, I like to do origami and drawing, which you can
 
 ![snake animation](https://anton-chl.github.io/anton-chl/snake-custom.svg)
 
-<img src="https://anton-chl.github.io/anton-chl/snake-custom.svg" alt="snake animation" />
+![snake animation](https://raw.githubusercontent.com/anton-chl/anton-chl/output/github-contributions-snake.gif)
+[View the SVG version](https://anton-chl.github.io/anton-chl/snake-contributions-snake.svg)
 
