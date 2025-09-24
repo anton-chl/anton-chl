@@ -29,5 +29,4 @@ Feel free to look at my projects :)
 </p> -->
 
 ![snake animation](https://raw.githubusercontent.com/anton-chl/anton-chl/main/custom-dist/snake.gif)
-[View the SVG version](https://anton-chl.github.io/anton-chl/snake-custom.svg)
 
