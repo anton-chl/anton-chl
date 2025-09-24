@@ -11,8 +11,10 @@
 ---
 
 ## About Me
-I'm a 2A Computer Engineering Student at the University of Waterloo, who happens to be a Hackathon enthusiast (8x Winner).
+I'm a 2A Computer Engineering Student at the University of Waterloo, and a Hackathon enthusiast (8x Winner).
+
 Right now, i'm mostly interested in: AI/ML, LLMs, CV, Graphics processing, optimization.
+
 I'm very passionate about computer science and math, design, and robotics.
 
 When I'm not coding or studying, I like to do origami and drawing, which you can view <a href="https://imgur.com/a/art-by-anton-b6C0ZCR"> here
@@ -24,4 +26,4 @@ When I'm not coding or studying, I like to do origami and drawing, which you can
   <img height="165" src="https://github-readme-streak-stats.herokuapp.com?user=anton-chl&theme=tokyonight&hide_border=true"/>
 </p>
 
-![snake animation](https://github.com/anton-chl/anton-chl/blob/output/github-contributions-snake.svg)
+![snake animation](https://anton-chl.github.io/anton-chl/snake-custom.svg)
