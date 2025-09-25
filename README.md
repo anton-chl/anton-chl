@@ -22,10 +22,3 @@ When I'm not coding or studying, I like to do origami and drawing, which you can
 Feel free to look at my projects :)
 
 ---
-
-<!-- <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=anton-chl&show_icons=true&theme=tokyonight&hide_border=true"/>
-  <img height="165" src="https://github-readme-streak-stats.herokuapp.com?user=anton-chl&theme=tokyonight&hide_border=true"/>
-</p> -->
-
-![snake animation](https://raw.githubusercontent.com/anton-chl/anton-chl/main/custom-dist/snake.gif)
