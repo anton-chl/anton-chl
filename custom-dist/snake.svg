@@ -557,121 +557,284 @@
 <g id="snake">
 <g id="f0" visibility="visible">
 <rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
 <set attributeName="visibility" to="visible" begin="0.0s" end="0.12s"/>
 </g>
 <g id="f1" visibility="hidden">
 <rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(216,84,195)"/>
-<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(216,84,195)"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <set attributeName="visibility" to="visible" begin="0.12s" end="0.24s"/>
 </g>
 <g id="f2" visibility="hidden">
 <rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(225,89,191)"/>
-<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(196,74,203)"/>
-<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(225,89,191)"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(196,74,203)"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <set attributeName="visibility" to="visible" begin="0.24s" end="0.36s"/>
 </g>
 <g id="f3" visibility="hidden">
 <rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(231,92,189)"/>
-<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(208,80,198)"/>
-<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(184,67,207)"/>
-<rect x="2" y="82" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(231,92,189)"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(208,80,198)"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(184,67,207)"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <set attributeName="visibility" to="visible" begin="0.36s" end="0.48s"/>
 </g>
 <g id="f4" visibility="hidden">
 <rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(235,94,187)"/>
-<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(216,84,195)"/>
-<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(196,74,203)"/>
-<rect x="2" y="82" width="16" height="16" rx="4" ry="4" fill="rgb(177,63,210)"/>
-<rect x="2" y="102" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(235,94,187)"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(216,84,195)"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(196,74,203)"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(177,63,210)"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
 <rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="2" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <set attributeName="visibility" to="visible" begin="0.48s" end="0.6s"/>
 </g>
 <g id="f5" visibility="hidden">
 <rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(238,96,186)"/>
-<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(221,87,193)"/>
-<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(204,78,199)"/>
-<rect x="2" y="82" width="16" height="16" rx="4" ry="4" fill="rgb(188,69,206)"/>
-<rect x="2" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(171,60,212)"/>
-<rect x="22" y="102" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(238,96,186)"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(221,87,193)"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(204,78,199)"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(188,69,206)"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(171,60,212)"/>
+<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
 <rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="2" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <set attributeName="visibility" to="visible" begin="0.6s" end="0.72s"/>
 </g>
 <g id="f6" visibility="hidden">
 <rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(240,97,185)"/>
-<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(225,89,191)"/>
-<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(211,81,197)"/>
-<rect x="2" y="82" width="16" height="16" rx="4" ry="4" fill="rgb(196,74,203)"/>
-<rect x="2" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(181,66,208)"/>
-<rect x="22" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(167,58,214)"/>
-<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(240,97,185)"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(225,89,191)"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(211,81,197)"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(196,74,203)"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(181,66,208)"/>
+<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(167,58,214)"/>
+<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
 <rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="2" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <set attributeName="visibility" to="visible" begin="0.72s" end="0.84s"/>
 </g>
 <g id="f7" visibility="hidden">
 <rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(242,98,185)"/>
-<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(229,91,190)"/>
-<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(216,84,195)"/>
-<rect x="2" y="82" width="16" height="16" rx="4" ry="4" fill="rgb(203,77,200)"/>
-<rect x="2" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(190,70,205)"/>
-<rect x="22" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(177,63,210)"/>
-<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(164,56,215)"/>
-<rect x="42" y="122" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(242,98,185)"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(229,91,190)"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(216,84,195)"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(203,77,200)"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(190,70,205)"/>
+<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(177,63,210)"/>
+<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(164,56,215)"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
 <rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="42" y="122" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="2" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <set attributeName="visibility" to="visible" begin="0.84s" end="0.96s"/>
 </g>
 <g id="f8" visibility="hidden">
 <rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(243,98,184)"/>
-<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(231,92,189)"/>
-<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(219,86,193)"/>
-<rect x="2" y="82" width="16" height="16" rx="4" ry="4" fill="rgb(208,80,198)"/>
-<rect x="2" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(196,74,203)"/>
-<rect x="22" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(184,67,207)"/>
-<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(173,61,212)"/>
-<rect x="42" y="122" width="16" height="16" rx="4" ry="4" fill="rgb(161,55,216)"/>
-<rect x="22" y="122" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(243,98,184)"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(231,92,189)"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(219,86,193)"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(208,80,198)"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(196,74,203)"/>
+<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(184,67,207)"/>
+<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(173,61,212)"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(161,55,216)"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
 <rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="42" y="122" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="2" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <set attributeName="visibility" to="visible" begin="0.96s" end="1.08s"/>
 </g>
 <g id="f9" visibility="hidden">
 <rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(244,99,184)"/>
-<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(233,93,188)"/>
-<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(223,88,192)"/>
-<rect x="2" y="82" width="16" height="16" rx="4" ry="4" fill="rgb(212,82,196)"/>
-<rect x="2" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(201,76,200)"/>
-<rect x="22" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(191,71,205)"/>
-<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(180,65,209)"/>
-<rect x="42" y="122" width="16" height="16" rx="4" ry="4" fill="rgb(169,59,213)"/>
-<rect x="22" y="122" width="16" height="16" rx="4" ry="4" fill="rgb(159,54,217)"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(244,99,184)"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(233,93,188)"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(223,88,192)"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(212,82,196)"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(201,76,200)"/>
+<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(191,71,205)"/>
+<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(180,65,209)"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(169,59,213)"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="rgb(159,54,217)"/>
+<rect x="22" y="102" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<set attributeName="visibility" to="visible" begin="1.08s" end="1.2s"/>
+</g>
+<g id="f10" visibility="hidden">
+<rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(245,99,183)"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(235,94,187)"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(225,89,191)"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(216,84,195)"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(206,79,199)"/>
+<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(196,74,203)"/>
+<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(186,68,206)"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(177,63,210)"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="rgb(167,58,214)"/>
+<rect x="22" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(157,53,218)"/>
+<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<set attributeName="visibility" to="visible" begin="1.2s" end="1.32s"/>
+</g>
+<g id="f11" visibility="hidden">
+<rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(246,100,183)"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(237,95,187)"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(227,90,190)"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(219,85,194)"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(210,81,197)"/>
+<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(201,76,201)"/>
+<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(192,71,204)"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(183,66,208)"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="rgb(174,62,211)"/>
+<rect x="22" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(165,57,215)"/>
+<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(156,52,218)"/>
+<rect x="42" y="122" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="122" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<set attributeName="visibility" to="visible" begin="1.32s" end="1.44s"/>
+</g>
+<g id="f12" visibility="hidden">
+<rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(246,100,183)"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(238,96,186)"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(229,91,189)"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(221,87,193)"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(213,82,196)"/>
+<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(204,78,199)"/>
+<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(196,74,203)"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(188,69,206)"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="rgb(179,65,209)"/>
+<rect x="22" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(171,60,212)"/>
+<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(163,56,216)"/>
+<rect x="42" y="122" width="16" height="16" rx="4" ry="4" fill="rgb(154,51,219)"/>
+<rect x="22" y="122" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="122" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<set attributeName="visibility" to="visible" begin="1.44s" end="1.56s"/>
+</g>
+<g id="f13" visibility="hidden">
+<rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(247,100,183)"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(239,96,186)"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(231,92,189)"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(223,88,192)"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(216,84,195)"/>
+<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(208,80,198)"/>
+<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(200,76,201)"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(192,71,204)"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="rgb(184,67,207)"/>
+<rect x="22" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(177,63,210)"/>
+<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(169,59,213)"/>
+<rect x="42" y="122" width="16" height="16" rx="4" ry="4" fill="rgb(161,55,216)"/>
+<rect x="22" y="122" width="16" height="16" rx="4" ry="4" fill="rgb(153,51,219)"/>
 <rect x="2" y="122" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
 <rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="122" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<set attributeName="visibility" to="visible" begin="1.56s" end="1.68s"/>
+</g>
+<g id="f14" visibility="hidden">
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(247,100,183)"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(239,96,186)"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(231,92,189)"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(223,88,192)"/>
+<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(216,84,195)"/>
+<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(208,80,198)"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(200,76,201)"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="rgb(192,71,204)"/>
+<rect x="22" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(184,67,207)"/>
+<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(177,63,210)"/>
+<rect x="42" y="122" width="16" height="16" rx="4" ry="4" fill="rgb(169,59,213)"/>
+<rect x="22" y="122" width="16" height="16" rx="4" ry="4" fill="rgb(161,55,216)"/>
+<rect x="2" y="122" width="16" height="16" rx="4" ry="4" fill="rgb(153,51,219)"/>
+<rect x="2" y="102" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <rect x="42" y="122" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <rect x="2" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<set attributeName="visibility" to="visible" begin="1.08s" end="1.2s"/>
+<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<set attributeName="visibility" to="visible" begin="1.68s" end="1.8s"/>
+</g>
+<g id="f15" visibility="hidden">
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(247,100,183)"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(239,96,186)"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(231,92,189)"/>
+<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(223,88,192)"/>
+<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(216,84,195)"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(208,80,198)"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="rgb(200,76,201)"/>
+<rect x="22" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(192,71,204)"/>
+<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(184,67,207)"/>
+<rect x="42" y="122" width="16" height="16" rx="4" ry="4" fill="rgb(177,63,210)"/>
+<rect x="22" y="122" width="16" height="16" rx="4" ry="4" fill="rgb(169,59,213)"/>
+<rect x="2" y="122" width="16" height="16" rx="4" ry="4" fill="rgb(161,55,216)"/>
+<rect x="2" y="102" width="16" height="16" rx="4" ry="4" fill="rgb(153,51,219)"/>
+<rect x="2" y="82" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="2" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="82" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="122" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="2" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="42" y="102" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<set attributeName="visibility" to="visible" begin="1.8s" end="1.92s"/>
 </g>
 </g>
 <animate href="#snake" attributeName="visibility" from="visible" to="visible" dur="60.0s" repeatCount="indefinite"/>
