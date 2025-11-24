@@ -539,65 +539,45 @@
 <g id="snake">
 <g id="f0" visibility="visible">
 <rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
 <set attributeName="visibility" to="visible" begin="0.0s" end="0.12s"/>
 </g>
 <g id="f1" visibility="hidden">
 <rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(216,84,195)"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(216,84,195)"/>
 <rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <set attributeName="visibility" to="visible" begin="0.12s" end="0.24s"/>
 </g>
 <g id="f2" visibility="hidden">
 <rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(225,89,191)"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(225,89,191)"/>
 <rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(196,74,203)"/>
 <rect x="22" y="42" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <set attributeName="visibility" to="visible" begin="0.24s" end="0.36s"/>
 </g>
 <g id="f3" visibility="hidden">
 <rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(231,92,189)"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(231,92,189)"/>
 <rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(208,80,198)"/>
 <rect x="22" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(184,67,207)"/>
-<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
 <rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <set attributeName="visibility" to="visible" begin="0.36s" end="0.48s"/>
 </g>
 <g id="f4" visibility="hidden">
 <rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(235,94,187)"/>
+<rect x="22" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(235,94,187)"/>
 <rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(216,84,195)"/>
 <rect x="22" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(196,74,203)"/>
-<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(177,63,210)"/>
-<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
+<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(177,63,210)"/>
+<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
 <rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<set attributeName="visibility" to="visible" begin="0.48s" end="0.6s"/>
-</g>
-<g id="f5" visibility="hidden">
-<rect x="2" y="2" width="16" height="16" rx="4" ry="4" fill="rgb(255,105,180)"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(238,96,186)"/>
-<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="rgb(221,87,193)"/>
-<rect x="22" y="42" width="16" height="16" rx="4" ry="4" fill="rgb(204,78,199)"/>
-<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(188,69,206)"/>
-<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="rgb(171,60,212)"/>
-<rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="#ff69b4"/>
-<rect x="2" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
 <rect x="2" y="42" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="22" y="22" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="2" y="62" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<rect x="22" y="62" width="16" height="16" rx="4" ry="4" fill="#161b22" stroke="#21262d" stroke-width="1"/>
-<set attributeName="visibility" to="visible" begin="0.6s" end="0.72s"/>
+<set attributeName="visibility" to="visible" begin="0.48s" end="0.6s"/>
 </g>
 </g>
 <animate href="#snake" attributeName="visibility" from="visible" to="visible" dur="60.0s" repeatCount="indefinite"/>
