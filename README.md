@@ -6,7 +6,7 @@
 - My personal <a href="https://antonlee.ca">Website
 - My <a href="mailto:ach2lee@uwaterloo.ca">Email
 - My <a href="https://devpost.com/cx">Devpost
-- Currently building <a href="https://flair.social">Flair
+- Previously building <a href="https://flair.social">Flair
 
 ---
 
