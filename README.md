@@ -11,7 +11,7 @@
 ---
 
 ## About Me
-I'm a 2A Computer Engineering Student at the University of Waterloo, and a Hackathon enthusiast (8x Winner).
+I'm a 2A Computer Engineering Student at the University of Waterloo, and a Hackathon enthusiast (15x+ Winner, not random sponsor tracks).
 
 Right now, i'm mostly interested in: AI/ML, LLMs, CV, Graphics processing, optimization.
 
