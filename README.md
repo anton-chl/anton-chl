@@ -12,7 +12,7 @@
 ---
 
 ## About Me
-I'm a 2A Computer Engineering Student at the University of Waterloo, and a Hackathon enthusiast (15x+ Winner, not random sponsor tracks).
+I'm a 2A Computer Engineering Student at the University of Waterloo, and a Hackathon enthusiast (15x+ Winner).
 
 Since I was a child, I've always loved computer science and math, design, and robotics.
 
