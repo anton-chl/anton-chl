@@ -12,13 +12,11 @@
 ---
 
 ## About Me
-I'm a 2A Computer Engineering Student at the University of Waterloo, and a Hackathon enthusiast (15x+ Winner).
+I'm a Computer Engineering Student at the University of Waterloo, and a Hackathon enthusiast (15x+ Winner).
 
-Since I was a child, I've always loved computer science and math, design, and robotics.
+Right now, i'm mostly interested in: Physical AI, CV, and Graphics.
 
-Right now, i'm mostly interested in: AI/ML, CV, Graphics processing, and med-tech.
-
-When I'm not coding or studying, I like to do origami and drawing, which you can view <a href="https://antonlee.ca/art"> here
+I also like to do origami and drawing, which you can view <a href="https://antonlee.ca/art"> here
 
 Feel free to look at my projects :)
 
