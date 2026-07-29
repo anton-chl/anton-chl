@@ -12,7 +12,7 @@
 ---
 
 ## About Me
-I'm a Computer Engineering Student at the University of Waterloo, and a Hackathon enthusiast (15x+ Winner).
+I'm a Computer Engineering Student at the University of Waterloo, and a Hackathon enthusiast (20x+ Winner).
 
 Right now, i'm mostly interested in: Physical AI, CV, and Graphics.
 
